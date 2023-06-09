@@ -1,0 +1,77 @@
+body {
+    background-color: #222;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+  }
+
+  @font-face {
+    font-family:minecraft;
+    src: url("Minecraft.ttf");
+  }
+  
+  span {
+    color: #DADADA;
+    text-shadow: 0px 0px 50px  #DADADA;
+  }
+
+  #title{
+    font-family:minecraft;
+    font-size: 50px;
+  }
+  
+  a {
+    color: #4FED4F;
+  }
+  
+  .blinking-cursor {
+    -webkit-animation: 1.5s blink step-end infinite;
+    -moz-animation: 1.5s blink step-end infinite;
+    -ms-animation: 1.5s blink step-end infinite;
+    -o-animation: 1.5s blink step-end infinite;
+    animation: 1.5s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #eee;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #eee;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #eee;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #eee;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #eee;
+    }
+  }

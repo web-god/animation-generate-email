@@ -1,0 +1,205 @@
+:root {
+  --cover-image: url("");
+  --image1: url("");
+  --image2: url("");
+
+  --bg: #222;
+  --color1: #dadada;
+  --color2: #dadada;
+  --color3: #1a5468;
+  --color4: #121212;
+  --font1: "Fredoka One", sans-serif;
+  --font2: "Courier New", monospace;
+}
+
+.cover-image {
+  content: var(--cover-image);
+}
+.image1 {
+  content: var(--image1);
+}
+.image2 {
+  content: var(--image2);
+}
+.image3 {
+  content: var(--image3);
+}
+
+body {
+  background-color: var(--bg);
+  font-size: 18px;
+  line-height: 1.11;
+  font-family: var(--font2);
+  color: var(--color1);
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-top: 0px;
+  width: 25em;
+  text-shadow: 2px 2px 0px var(--color4);
+}
+
+@font-face {
+    font-family:minecraft;
+    src: url("Minecraft.ttf");
+  }
+
+#title{
+    font-family:minecraft;
+    font-size: 50px;
+    font-family: minecraft;
+  }
+
+pre {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+a {
+  font-size: 17px;
+}
+
+a:link {
+  font-weight: bold;
+  color: var(--color2);
+  text-decoration: underline;
+}
+a:visited {
+  color: var(--color2);
+  text-decoration: none;
+}
+a:hover {
+  text-shadow: 0px 0px 0px var(--color4);
+  text-decoration: none;
+  color: var(--bg);
+  background: var(--color2);
+}
+
+input {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  color: var(--color1);
+  background: var(--bg);
+  border: solid 2px var(--color2);
+  border-radius: 0px;
+  padding: 10px;
+}
+
+textarea {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  font-size: 15px;
+  color: var(--color1);
+  background: var(--bg);
+  border: solid 2px var(--color2);
+  border-radius: 0px;
+  padding: 10px;
+}
+
+textarea:focus,
+input:focus {
+  border: solid 2px var(--color2);
+  outline: solid 5px var(--color2);
+}
+
+textarea:hover,
+input:hover {
+  border: solid 2px var(--color2);
+  outline: solid 5px var(--color2);
+}
+
+button {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+  display: block;
+  width: 100%;
+  font-size: 200%;
+  color: var(--bg);
+  background: var(--color2);
+  border: solid 2px var(--color2);
+  border-radius: 0px;
+  padding: 10px;
+}
+
+button:link {
+  font-weight: bold;
+  color: var(--color2);
+  text-decoration: underline;
+}
+button:visited {
+  color: var(--color2);
+  text-decoration: none;
+}
+button:hover {
+  outline: solid 5px var(--color2);
+  text-shadow: 0px 0px 0px var(--color4);
+  text-decoration: none;
+  cursor: pointer;
+  border: solid 2px var(--color2);
+  color: var(--color2);
+  background: var(--bg);
+}
+
+span {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--color2);
+}
+
+img {
+  /* image-rendering: pixelated;*/
+  filter: drop-shadow(5px 5px 0px var(--color4));
+}
+
+.row {
+  margin: 0px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 0px;
+}
+
+@media screen and (max-width: 555px) {
+  .column {
+    width: 100%;
+  }
+
+  body {
+    font-size: 3vw;
+    width: 90%;
+  }
+
+  a {
+    font-size: 3vw;
+  }
+
+  span {
+    font-size: 200%;
+  }
+}
